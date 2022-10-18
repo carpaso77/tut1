@@ -4,17 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/screenBackground"
     tools:context=".FirstFragment">
 
     <TextView
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:clickable="false"
+        android:fontFamily="monospace"
         android:text="@string/hello_first_fragment"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
 
     <Button
         android:id="@+id/button_first"
